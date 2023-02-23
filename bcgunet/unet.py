@@ -118,3 +118,7 @@ class UNet1d(nn.Module):
         x = self.up4(x, x1)
         logits = self.outc(x)
         return logits
+
+if __name__ == '__main__':
+    model = UNet1d(1, 1)
+    print(model)
